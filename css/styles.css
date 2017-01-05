@@ -1,0 +1,79 @@
+ @font-face { 
+ 	font-family: Gothic; 
+ 	src: url('../fonts/GOTHIC.TTF');
+ } 
+
+
+.banner
+{
+	background: blue;
+	height: 2.5vw;
+	width: 100%;
+}
+
+.navbar_main {
+	margin: 2.5vh 0;
+}
+
+.navbar_main ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+.navbar_main li{
+	display: inline;
+	margin: 0 3vh;
+	color: red;
+	list-style-type:none;
+	text-decoration: none;
+	font-size: 3vh;
+	font-family: Gothic;
+}
+
+.navbar_main a:link {
+	text-decoration: none;
+	color: grey;
+}
+.navbar_main a:visited {
+	text-decoration: none;
+	color: grey;
+}
+.navbar_main a:active{ 
+	text-decoration: none;
+	color:#609;
+}
+.navbar_main a:hover{ 
+	text-decoration: none;
+	padding-bottom: .3vh;
+	border-bottom: 3px solid blue;
+	border-bottom-color: blue;
+	/*color:blue;*/
+	/*text-decoration: underline;*/
+}
+.navbar_main a:focus { 
+	text-decoration: none; 
+	color:#609;
+}
+
+.main_content {
+	font-family: Gothic;
+	position: absolute;
+	top: 30%;
+ 	left: 37%;
+	/*margin-right: -50%;*/
+	font-size: 10vh;
+}
+
+.Heading h1{
+	font-weight: normal;
+	font-family: Gothic;
+	position: absolute;
+	top: 37%;
+ 	left: 33.5%;
+	/*margin-right: -50%;*/
+	font-size: 10vh;
+}
+.mainer {
+	color:blue;
+}

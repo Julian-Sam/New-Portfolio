@@ -99,7 +99,7 @@ body, html, main {
 .page_one_buttons a {
 	transition: all .2s linear; 
 	padding: 0 1vh;
-	border: .4vh solid black;
+	border: .3vh solid black;
 	border-radius: .5vh;
 }
 .page_one_buttons a:link {

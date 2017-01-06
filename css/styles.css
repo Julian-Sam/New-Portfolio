@@ -21,16 +21,15 @@ body, html, main {
 	height: 3vh;
 	width: 100%;
 }
-/*.navbar_main {
-	margin: 2.5vh 0;
-}*/
 
-.navbar_main ul{
+#menu  {
 	position: absolute;
-	top: 4.5vh;
+	top: 3.5vh;
 	right: 0;
+	z-index: 70;
 	list-style-type: none;
 }
+
 
 .navbar_main li{
 	display: inline;
@@ -55,6 +54,10 @@ body, html, main {
 .navbar_main a:active{ 
 	text-decoration: none;
 	color:black;
+	padding-bottom: .25vh;
+	border-bottom: .4vh solid blue;
+	border-bottom-color: blue;
+
 }
 .navbar_main a:hover{ 
 	text-decoration: none;
@@ -65,12 +68,16 @@ body, html, main {
 .navbar_main a:focus { 
 	text-decoration: none; 
 	color:black;
+	padding-bottom: .25vh;
+	border-bottom: .4vh solid blue;
+	border-bottom-color: blue;
+
 }
 
 .main_content {
 	position: absolute;
 	top: 38%;
- 	left: 50%;
+ 	left: 25%;
 	font-family: 'Didact Gothic', sans-serif;;
 	font-size: 5vw;
 	transform: translate(-50%, -50%);
@@ -81,7 +88,7 @@ body, html, main {
 	font-family: 'Didact Gothic', sans-serif;;
 	position: absolute;
 	top: 48.5%;
- 	left: 50%;
+ 	left: 25%;
 	transform: translate(-50%, -50%);
 	font-size: 5vw;
 }
@@ -93,7 +100,7 @@ body, html, main {
 	padding: 0;
 	position: absolute;
 	top:60%;
-	left: 51%;
+	left: 25.5%;
 	transform: translate(-50%,-50%);
 }
 .page_one_buttons ul{
@@ -110,11 +117,13 @@ body, html, main {
 	margin: 0 3vw 0 0;
 	font-size: 5vh;
 }
+
 .page_one_buttons a {
 	transition: all .2s linear; 
 	padding: 0 1vh;
 	border: .3vh solid black;
 	border-radius: .5vh;
+	padding: 0 1vw;
 }
 .page_one_buttons a:link {
 	text-decoration: none;
@@ -131,7 +140,7 @@ body, html, main {
 .page_one_buttons a:hover{ 
 	text-decoration: none;
 	border-color: blue;
-	padding: .2vh 1.5vh;
+	padding: .2vh 1.2vw;
 	border-radius: .5vh;
 	font-size: 5.3vh;
 }

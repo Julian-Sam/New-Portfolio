@@ -2,70 +2,80 @@
 
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  
+	<meta charset="utf-8">
 
-  <title>Julian Sam</title>
-  <meta name="Personal Website" content="Julian Sam">
-  <meta name="Julian Sam" content="Personal Website">
+	<title>Julian Sam</title>
+	<meta name="Personal Website" content="Julian Sam">
+	<meta name="Julian Sam" content="Personal Website">
+	<link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
 
-  <link rel="stylesheet" href="css/styles.css?v=1.0">
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<script src="vendors/jquery.easings.min.js"></script>
+	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+	<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
 
-  <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+	    	$('#fullpage').fullpage(
 
+		    	{
+		    		dragAndMove:true,
+		    		controlArrows:false,
+		    		responsiveSlides: true,
+		    		anchors: ["Home"],
+		    		menu:"menu"
+		    	}
 
-<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script type="text/javascript" src="jquery.fullPage.js"></script>
+	    	);
+		});
 
-<script type="text/javascript">
-$(document).ready(function() {
-    $('#fullpage').fullpage(
-    	{
-    		anchors:['firstPage', 'secondPage']
-    	});
-});
-</script>
+	</script>
 
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
 </head>
 
 <body>
   <!-- <script src="js/scripts.js"></script> -->
+<div class="top_banner"> <!-- Top Banner Div --> </div>
 
-	<div id="fullpage"> 
-		
-		<div class="section">
-			
-			<div class="top_banner"></div>
-			<div class="navbar_main">
-				<ul>
-					<li>
-						<a href="#Home">Home</a>
-					</li>
-					<li>
-						<a data-menuanchor="firstPage" href="#secondPage">About</a>
-					</li>
-					<li>
-						<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
-					</li>
-					<li>
-						<a href="broken_page.html">Contact</a>
-					</li>
-				</ul>
-		    </div>
+	<ul id="menu" class="navbar_main">
+		<li>
+			<a class="main_menu" href="#Home/0">Home</a>
+		</li>
+		<li>
+			<a class="main_menu" href="#Home/1">About</a>
+		</li>
+		<li>
+			<a class="main_menu" href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
+		</li>
+		<li>
+			<a class="main_menu" href="broken_page.html">Contact</a>
+		</li>
+	</ul>	
 
-		    <div class = "main_content">
-		    	Hello World,
-		    </div>
-		    <div class = "secondary_Content">
-		   		I'm  <span class="name"> Julian Sam</span>
-		    </div>
+<div id="fullpage">
+    <div class="section">
+
+	    <div class="slide"> 
 
 
-		    <div class="page_one_buttons">
-		    	<ul class="ul_page_one">
+			<div class = "main_content">
+				Hello World, 
+			</div>
+			<div class = "secondary_Content">
+					I'm  <span class="name"> Julian Sam</span> 
+			</div>
+
+			<div class="page_one_buttons">
+				<ul class="ul_page_one">
 						<li>
 							<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
 						</li>
@@ -73,19 +83,18 @@ $(document).ready(function() {
 							<a href="broken_page.html">Contact</a>
 						</li>
 					</ul>
-		    </div>
+			</div>
+		</div>
+		
 
-
-		 </div>
-
-
-
-		 <div id="2" class="section">
-		 Hey
-		 </div>
-	
+		<div class="slide"> 
+		Hello
+		OK
+		</div>
 
 	</div>
+
+</div>
 
 </body>
 </html>

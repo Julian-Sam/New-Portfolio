@@ -15,30 +15,33 @@ body, html, main {
 
 .top_banner
 {
+	position: absolute;
+	top:0;
 	background: blue;
-	height: 2.5vw;
+	height: 3vh;
 	width: 100%;
 }
-.navbar_main {
+/*.navbar_main {
 	margin: 2.5vh 0;
-}
+}*/
+
 .navbar_main ul{
+	position: absolute;
+	top: 4.5vh;
+	right: 0;
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	float: right;
 }
+
 .navbar_main li{
 	display: inline;
 	margin: 0 3vh;
 	color: red;
-	list-style-type:none;
 	text-decoration: none;
-	font-size: 3vh;
+	font-size: 1.7em;
 	font-family: 'Didact Gothic', sans-serif;;
 }
 .navbar_main a {
-		transition: all .1s linear; 
+	transition: all .1s linear; 
 }
 
 .navbar_main a:link {
@@ -65,13 +68,12 @@ body, html, main {
 }
 
 .main_content {
-	font-family: 'Didact Gothic', sans-serif;;
 	position: absolute;
 	top: 38%;
  	left: 50%;
+	font-family: 'Didact Gothic', sans-serif;;
 	font-size: 5vw;
 	transform: translate(-50%, -50%);
-
 }
 
 .secondary_Content {

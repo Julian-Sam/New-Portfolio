@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -12,6 +12,20 @@
 
   <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
 
+
+<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.fullPage.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#fullpage').fullpage(
+    	{
+    		anchors:['firstPage', 'secondPage']
+    	});
+});
+</script>
+
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
@@ -19,52 +33,59 @@
 
 <body>
   <!-- <script src="js/scripts.js"></script> -->
-	<div class="page_one">
-		<div class="top_banner"></div>
-		<div class="navbar_main">
-			<ul>
-				<li>
-					<a href="#Home">Home</a>
-				</li>
-				<li>
-					<a href="broken_page.html">About</a>
-				</li>
-				<li>
-					<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
-				</li>
-				<li>
-					<a href="broken_page.html">Contact</a>
-				</li>
-			</ul>
-	    </div>
 
-	    <div class = "main_content">
-	    	Hello World,
-	    </div>
-	    <div class = "secondary_Content">
-	    I'm  <span class="name"> Julian Sam</span>
-	    </div>
+	<div id="fullpage"> 
+		
+		<div class="section">
+			
+			<div class="top_banner"></div>
+			<div class="navbar_main">
+				<ul>
+					<li>
+						<a href="#Home">Home</a>
+					</li>
+					<li>
+						<a data-menuanchor="firstPage" href="#secondPage">About</a>
+					</li>
+					<li>
+						<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
+					</li>
+					<li>
+						<a href="broken_page.html">Contact</a>
+					</li>
+				</ul>
+		    </div>
 
-
-	    <div class="page_one_buttons">
-	    	<ul class="ul_page_one">
-				<li>
-					<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
-				</li>
-				<li>
-					<a href="broken_page.html">Contact</a>
-				</li>
-
-			</ul>
-	    </div>
+		    <div class = "main_content">
+		    	Hello World,
+		    </div>
+		    <div class = "secondary_Content">
+		   		I'm  <span class="name"> Julian Sam</span>
+		    </div>
 
 
-	    <div>
+		    <div class="page_one_buttons">
+		    	<ul class="ul_page_one">
+						<li>
+							<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
+						</li>
+						<li>
+							<a href="broken_page.html">Contact</a>
+						</li>
+					</ul>
+		    </div>
 
-	    </div>
+
+		 </div>
 
 
 
-	 </div>
+		 <div id="2" class="section">
+		 Hey
+		 </div>
+	
+
+	</div>
+
 </body>
 </html>

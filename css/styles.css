@@ -1,10 +1,18 @@
 * { 	padding: 0px;
 		margin: 0px;
-		padding: 0px;
 }
 body, html, main {
 	height: 100%;
 }
+
+/* Highlight Colors */
+::selection {
+  background: #ff0066; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #ff0066; /* Gecko Browsers */
+}
+
 .top_banner
 {
 	background: blue;
@@ -29,6 +37,10 @@ body, html, main {
 	font-size: 3vh;
 	font-family: 'Didact Gothic', sans-serif;;
 }
+.navbar_main a {
+		transition: all .1s linear; 
+}
+
 .navbar_main a:link {
 	text-decoration: none;
 	color: grey;
@@ -57,7 +69,7 @@ body, html, main {
 	position: absolute;
 	top: 38%;
  	left: 50%;
-	font-size: 10vh;
+	font-size: 5vw;
 	transform: translate(-50%, -50%);
 
 }
@@ -69,7 +81,7 @@ body, html, main {
 	top: 48.5%;
  	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 10vh;
+	font-size: 5vw;
 }
 .name {
 	color:blue;
@@ -94,7 +106,7 @@ body, html, main {
 	display: inline;
 	font-family: 'Didact Gothic', sans-serif;
 	margin: 0 3vw 0 0;
-	font-size: 4.5vh;
+	font-size: 5vh;
 }
 .page_one_buttons a {
 	transition: all .2s linear; 
@@ -119,7 +131,7 @@ body, html, main {
 	border-color: blue;
 	padding: .2vh 1.5vh;
 	border-radius: .5vh;
-	font-size: 4.8vh;
+	font-size: 5.3vh;
 }
 .page_one_buttons a:focus { 
 	text-decoration: none; 

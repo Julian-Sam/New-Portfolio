@@ -30,7 +30,6 @@ body, html, main {
 	list-style-type: none;
 }
 
-
 .navbar_main li{
 	display: inline;
 	margin: 0 3vh;
@@ -43,6 +42,14 @@ body, html, main {
 	transition: all .1s linear; 
 }
 
+.navbar_main li.active a{
+	text-decoration: none;
+	color:black;
+	padding-bottom: .25vh;
+	border-bottom: .4vh solid blue;
+	border-bottom-color: blue;
+}
+
 .navbar_main a:link {
 	text-decoration: none;
 	color: grey;
@@ -51,33 +58,24 @@ body, html, main {
 	text-decoration: none;
 	color: grey;
 }
-.navbar_main a:active{ 
-	text-decoration: none;
-	color:black;
-	padding-bottom: .25vh;
-	border-bottom: .4vh solid blue;
-	border-bottom-color: blue;
 
-}
 .navbar_main a:hover{ 
 	text-decoration: none;
 	padding-bottom: .25vh;
 	border-bottom: .4vh solid blue;
 	border-bottom-color: blue;
 }
-.navbar_main a:focus { 
-	text-decoration: none; 
-	color:black;
-	padding-bottom: .25vh;
-	border-bottom: .4vh solid blue;
-	border-bottom-color: blue;
 
-}
+
+
+
+
+
 
 .main_content {
 	position: absolute;
 	top: 38%;
- 	left: 25%;
+ 	left: 12.5%;
 	font-family: 'Didact Gothic', sans-serif;;
 	font-size: 5vw;
 	transform: translate(-50%, -50%);
@@ -88,7 +86,7 @@ body, html, main {
 	font-family: 'Didact Gothic', sans-serif;;
 	position: absolute;
 	top: 48.5%;
- 	left: 25%;
+ 	left: 12.5%;
 	transform: translate(-50%, -50%);
 	font-size: 5vw;
 }
@@ -100,7 +98,7 @@ body, html, main {
 	padding: 0;
 	position: absolute;
 	top:60%;
-	left: 25.5%;
+	left: 12.75%;
 	transform: translate(-50%,-50%);
 }
 .page_one_buttons ul{

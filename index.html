@@ -5,7 +5,7 @@
   
 	<meta charset="utf-8">
 
-	<title>Julian Sam</title>
+	<title>Julian Sam | Home</title>
 	<meta name="Personal Website" content="Julian Sam">
 	<meta name="Julian Sam" content="Personal Website">
 	<link rel="stylesheet" href="css/styles.css?v=1.0">
@@ -18,8 +18,10 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-	<script type="text/javascript" src="scripts/active_script.js"></script>
 	<script type="text/javascript" src="scripts/jquery.fullPage.js"></script>
+
+	<script type="text/javascript" src="scripts/active_script.js"></script>
+
 
 	<script type="text/javascript">
 		
@@ -27,10 +29,45 @@
 	    	$('#fullpage').fullpage(
 
 		    	{
+		    		keyboardScrolling:false,
 		    		dragAndMove:true,
 		    		controlArrows:false,
 		    		responsiveSlides: true,
 		    		anchors: ["Home"],
+					
+					// afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)
+					// {
+					// 	document.onkeydown = function(e) {
+					// 	    switch (e.keyCode) {
+					// 	        case 39:
+					// 		        var a = document.getElementsByClassName("1");
+					// 		        for (i = 0; i < a.length; i++) {
+					// 		            if (a[i].classList.contains("active"))
+					// 		            {
+					// 		                a[i].classList.remove('active');
+					// 		                a[(i+1) % 4].classList.add('active');
+					// 		                break;
+					// 		            }
+					// 		        }
+					// 		        break;
+
+					// 	        case 37:
+					// 				var a = document.getElementsByClassName("1");
+					// 		        for (i = 0; i < a.length; i++) {
+					// 		            if (a[i].classList.contains("active"))
+					// 		            {
+					// 		                a[i].classList.remove('active');
+					// 		                a[(i+3) % 4].classList.add('active');
+					// 		                break;
+					// 		            }
+					// 		        }
+
+					// 		        break;
+					// 	    }
+					// 	};
+					
+					// },
+
 		    		menu:"menu"
 		    	}
 
@@ -46,16 +83,16 @@
 <div class="top_banner"> <!-- Top Banner Div --> </div>
 
 	<ul id="menu" class="navbar_main">
-		<li id="nav_link" onclick="change_active(this)" data-menuanchor="Home" class="active">
+		<li class="active links_to_slide" onclick="change_active(this)">
 			<a href="#Home/0">Home</a>
 		</li>
-		<li id="nav_link" onclick="change_active(this)" data-menuanchor="About">
+		<li class="links_to_slide" onclick="change_active(this)" >
 			<a href="#Home/1">About</a>
 		</li>
-		<li id="nav_link" onclick="change_active(this)" data-menuanchor="Portfolio">
+		<li class="links_to_slide" onclick="change_active(this)" >
 			<a href="#Home/2">Portfolio</a>
 		</li>
-		<li id="nav_link" onclick="change_active(this)" data-menuanchor="Contact">
+		<li class="links_to_slide" onclick="change_active(this)" >
 			<a  href="#Home/3">Contact</a>
 		</li>
 	</ul>	
@@ -65,35 +102,78 @@
 
 	    <div class="slide"> 
 
-
 			<div class = "main_content">
 				Hello World, 
 			</div>
 			<div class = "secondary_Content">
-					I'm  <span class="name"> Julian Sam</span> 
+				I'm  <span class="name">Julian Sam</span> 
 			</div>
 
 			<div class="page_one_buttons">
 				<ul class="ul_page_one">
-						<li>
-							<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
-						</li>
-						<li>
-							<a href="broken_page.html">Contact</a>
-						</li>
-					</ul>
+					<li>
+						<a href="media/documents/Julian-Sam-Resume.pdf">Resume</a>
+					</li>
+					<li onclick="change_active_contact(this)">
+						<a href="#Home/3">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+			<div id="social_icons">
+				<div id="github_icon"> <a href="https://github.com/Julian-Sam" target="_blank" >
+				 </a></div>				
+				<div id="linkedin_icon"> <a href="https://www.linkedin.com/in/Julian-Sam/" target="_blank" > </a> </div>
 			</div>
 		</div>
 		
+		<div class="slide"> 
+			About: Under Construction
+		</div>
 
 		<div class="slide"> 
-		About: Under Construction
+			Portfolio: Under Construction
 		</div>
+		
 		<div class="slide"> 
-		Portfolio: Under Construction
-		</div>
-		<div class="slide"> 
-		Contact: Under Construction
+
+			<div id="Contact_Form" >
+				<form id="form" class="topBefore" name="contactform" method="post" action="scripts/form_script.php">
+					<header>Send Me a Message!</header>
+
+					<input name="name" id="name" type="text" placeholder="NAME">
+					<input name="email" id="email" type="text" placeholder="E-MAIL">
+					<textarea name="message" id="message" type="text" placeholder="MESSAGE"></textarea>
+			  		<input id="submit" type="submit" value="Submit">
+	  
+				</form>
+			</div>
+				
+
+			<div id="extra_contact">
+				<p>OR</p>
+				<header> Reach Me Here:</header>
+
+				<ul class="social_links">
+					<li class="links">
+<img src="media/img/linkedin.png" alt="phone" height="30" width="30">
+
+						<a href="https://www.linkedin.com/in/Julian-Sam"> Julian-Sam </a>
+
+					</li>
+					<li > <img src="media/img/phone.png" alt="phone" height="30" width="30"> (+974) 33537319 </li>
+					<li class="links">
+						<img src="media/img/mail.png" alt="phone" height="25" width="40"> <a href="mailto:juliansam72@gmail.com"> juliansam72@gmail.com </a>
+						
+					</li>
+				</ul>
+			</div>
+
+			<div id="copyright_footer">
+				<footer>
+					Copyright &copy; Julian Sam 2016
+				</footer>
+			</div>
 		</div>
 
 	</div>

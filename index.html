@@ -30,48 +30,52 @@
 
 	<script type="text/javascript">
 		
-		$(document).ready(function() {
+		$(document).ready(function() 
+		{
 	    	$('#fullpage').fullpage(
 
 		    	{
-		    		keyboardScrolling:false,
+		    		// keyboardScrolling:true,
 		    		dragAndMove:true,
 		    		controlArrows:false,
 		    		responsiveSlides: true,
 		    		anchors: ["Home"],
+			        
+			        onSlideLeave: function( anchorLink, index, slideIndex, direction, nextSlideIndex)
+			        {
 					
-					// afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex)
-					// {
-					// 	document.onkeydown = function(e) {
-					// 	    switch (e.keyCode) {
-					// 	        case 39:
-					// 		        var a = document.getElementsByClassName("1");
-					// 		        for (i = 0; i < a.length; i++) {
-					// 		            if (a[i].classList.contains("active"))
-					// 		            {
-					// 		                a[i].classList.remove('active');
-					// 		                a[(i+1) % 4].classList.add('active');
-					// 		                break;
-					// 		            }
-					// 		        }
-					// 		        break;
+						document.onkeydown = function(e) 
+						{
+						    switch (e.keyCode) 
+						    {
+						        case 39: // key for right
+							        var a = document.getElementsByClassName("links_to_slide");
+							        for (i = 0; i < a.length; i++) {
+							            if (a[i].classList.contains("active"))
+							            {
+							                a[i].classList.remove('active');
+							                a[(i+1) % 4].classList.add('active');
+							                $.fn.fullpage.moveTo('Home', (i) % 4);
+							                break;
+							            }
+							        }
+							        break;
+						        case 37: // key for left
+									var a = document.getElementsByClassName("links_to_slide");
+							        for (i = 0; i < a.length; i++) {
+							            if (a[i].classList.contains("active"))
+							            {
+							                a[i].classList.remove('active');
+							                a[(i+3) % 4].classList.add('active');
+							                $.fn.fullpage.moveTo('Home', (i) % 4);
+							                break;
+							            }
+							        }
+							        break;
+						    }
+						};
 
-					// 	        case 37:
-					// 				var a = document.getElementsByClassName("1");
-					// 		        for (i = 0; i < a.length; i++) {
-					// 		            if (a[i].classList.contains("active"))
-					// 		            {
-					// 		                a[i].classList.remove('active');
-					// 		                a[(i+3) % 4].classList.add('active');
-					// 		                break;
-					// 		            }
-					// 		        }
-
-					// 		        break;
-					// 	    }
-					// 	};
-					
-					// },
+					},
 
 		    		menu:"menu"
 		    	}

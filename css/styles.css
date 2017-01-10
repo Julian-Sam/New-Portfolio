@@ -442,7 +442,7 @@ header {
 }
 #extra_contact a:hover{ 
 	text-decoration: none;
-	color: grey;
+	color: #ff0066;
 }
 #extra_contact a:focus { 
 	text-decoration: none; 

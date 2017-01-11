@@ -17,7 +17,7 @@ body, html, main {
 {
 	position: absolute;
 	top:0;
-	background: blue;
+	background: #004cc6;
 	height: 3vh;
 	width: 100%;
 }
@@ -46,8 +46,8 @@ body, html, main {
 	text-decoration: none;
 	color:black;
 	padding-bottom: .25vh;
-	border-bottom: 3px solid blue;
-	border-bottom-color: blue;
+	border-bottom: 3px solid #004cc6;
+	border-bottom-color: #004cc6;
 }
 
 .navbar_main a:link {
@@ -63,8 +63,8 @@ body, html, main {
 	text-decoration: none;
 	color: black;
 	padding-bottom: .25vh;
-	border-bottom: 3px solid blue;
-	border-bottom-color: blue;
+	border-bottom: 3px solid #004cc6;
+	border-bottom-color: #004cc6;
 }
 
 
@@ -92,7 +92,7 @@ body, html, main {
 	font-size: 5vw;
 }
 .name {
-	color:blue;
+	color:#004cc6;
 }
 .page_one_buttons {
 	margin: 0;
@@ -138,7 +138,7 @@ body, html, main {
 }
 .page_one_buttons a:hover{ 
 	text-decoration: none;
-	border-color: blue;
+	border-color: #004cc6;
 	padding: .2vh 1.2vw;
 	border-radius: .5vh;
 	font-size: 5.3vh;
@@ -200,20 +200,6 @@ body, html, main {
 	background-image: url(../media/img/linkedin_square_light.svg);
 }
 /*     Icons  */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -374,7 +360,7 @@ textarea:hover {
 }
 
 #submit:hover {
-  color: blue;
+  color: #004cc6;
 }
 
 
@@ -455,3 +441,35 @@ header {
 	bottom: 15px;
 	right: 15px;
 }
+
+
+/* About Page  */
+#about header {
+	color: #004cc6;
+	position: absolute;
+	top: 0%;
+	left: 32.5%;
+	transform: translate(-7.5%, 0%);
+	font-size: 5vw;
+}
+
+#mypic {
+	background-image: url(../media/img/julian_pic.svg);
+	background-repeat: no-repeat;
+	height: 70vh;
+	width: 70vh;
+	float: right;
+
+	margin-top: 150px;
+	margin-left: 0px;
+	margin-right: 10px;
+	margin-bottom: 0px;
+}
+
+#about p {
+	font-family: 'Didact Gothic', sans-serif;
+	font-size: 35px;
+	margin-top: 200px;
+	margin-left: 100px;
+}
+/* ---------- */

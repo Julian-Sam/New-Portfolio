@@ -448,9 +448,9 @@ header {
 	color: #004cc6;
 	position: absolute;
 	top: 0%;
-	left: 32.5%;
+	left: 33%;
 	transform: translate(-7.5%, 0%);
-	font-size: 5vw;
+	font-size: 4.75vw;
 }
 
 #mypic {

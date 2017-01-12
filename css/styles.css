@@ -1,5 +1,5 @@
 * { 	padding: 0px;
-		margin: 0px;
+		mar`n: 0px;
 }
 body, html, main {
 	height: 100%;
@@ -182,7 +182,7 @@ body, html, main {
 
 }
 #github_icon:hover a{
-	background-image: url(../media/img/github_light.svg);
+	opacity: 0.75;
 }
 
 #linkedin_icon a{
@@ -197,7 +197,7 @@ body, html, main {
 
 }
 #linkedin_icon:hover a{
-	background-image: url(../media/img/linkedin_square_light.svg);
+	opacity: 0.85;
 }
 /*     Icons  */
 
@@ -472,4 +472,16 @@ header {
 	margin-top: 200px;
 	margin-left: 100px;
 }
+.link_image {
+	position: relative;
+	top: 4px;
+}
+.link_image1 {
+	position: relative;	
+	top: 3px;
+}
+
+
 /* ---------- */
+
+

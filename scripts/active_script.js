@@ -1,4 +1,4 @@
-var NUM_SLIDES = 4;
+var NUM_SLIDES = 3;
 var first_done = 0;
 
 
@@ -43,8 +43,8 @@ document.onkeydown = function(e)
                 if (a[i].classList.contains("active"))
                 {
                     a[i].classList.remove('active');
-                    a[(i+1) % 4].classList.add('active');
-                    $.fn.fullpage.moveTo('Home', (i) % 4);
+                    a[(i+1) % 3].classList.add('active');
+                    $.fn.fullpage.moveTo('Home', (i) % 3);
                     first_done++;
                     break;
                 }
@@ -60,8 +60,8 @@ document.onkeydown = function(e)
                 if (a[i].classList.contains("active"))
                 {
                     a[i].classList.remove('active');
-                    a[(i+3) % 4].classList.add('active');
-                    $.fn.fullpage.moveTo('Home', (i) % 4);
+                    a[(i+2) % 3].classList.add('active');
+                    $.fn.fullpage.moveTo('Home', (i) % 3);
                     first_done++
                     break;
                 }

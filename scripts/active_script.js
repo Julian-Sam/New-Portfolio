@@ -23,7 +23,7 @@ function change_active_contact(elem) {
         a[i].classList.remove('active');
     }
     // add 'active' classs to the element that was clicked
-    a[3].classList.add('active');
+    a[2].classList.add('active');
 }
 
 
